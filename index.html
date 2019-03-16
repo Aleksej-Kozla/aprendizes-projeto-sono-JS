@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./mobile.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Gerenciador de tempo</h1>
+    </header>
+    <section>
+        <h2>Tempo de trabalhado</h2>
+        <input type="text" placeholder='0 horas' id='trabalho' onchange='tempo()'>
+        <p>Esse periodo se refere apenas periodo em que você é remunerado</p>
+
+        <br>
+        <br>
+
+        <h2>Tempo dormindo</h2>
+        <input type="text" placeholder='0 horas' id='dormir' onchange='tempo()'>
+        <p>Esse periodo envolve o tempo que voce passou dormindo ou se prerando para dormir</p>
+
+        <br>
+        <br>
+
+        <h2 id='resto'>Total de horas restantes: 0 horas</h2>
+        <p>Esse perido se refere ao seu tempo livre, tempo gasto em transporte e </p>
+    </section>
+
+    <section>
+        <h2>Salario liquido</h2>
+        <input type="text" id="salario" placeholder="R$ 0" onchange="dinheiro()">
+        <p>Referente a um mes</p>
+        <section>
+            <h2>Valor da sua hora</h2>
+            <p id="hora">-</p>
+            <h2>Valor do seu minuto</h2>
+            <p id="minuto">-</p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Qual o horario que vc vai dormir?</h2>
+        <input type="time" id="dormiu" onchange="dormir()">
+        <p id="acordou"></p>
+        <p id="recomendacao"></p>
+    </section>
+
+</body>
+
+</html>
