@@ -6,21 +6,27 @@ function tempo() {
 
     let calc = 24 - (trabalho + dormir)
 
-    resto.innerText = `Seu tempo livre é ${calc} horas`
+    resto.innerText = `Você tem ${calc} horas livres`
 }
 
 function dinheiro() {
 
-    let salario = document.getElementById('salario').value
-    let minuto = document.getElementById('minuto')
-    let hora = document.getElementById('hora')
+    let salario = document.getElementById('salario').value.replace(/[^0-9]/g, '')
+    trabalho = parseInt(document.getElementById('trabalho').value, 10)
+    if (trabalho){}else{
+        alert('Responda quantas horas você trabalha primeiro')
+    }
 
-    d = parseInt(salario.value, 10) / 21
-    h = Math.round((d / parseInt(trabalho.value, 10)) * 100) / 100
+    let hora = document.getElementById('hora')
+    let minuto = document.getElementById('minuto')
+
+    d = salario / 21
+    
+    h = Math.round(trabalho * 100) / 100
     m = Math.round((h / 60) * 1000) / 1000
 
-    hora.innerText = h
-    minuto.innerText = m
+    hora.innerText = `R$${h}`
+    minuto.innerText = `R$${m}`
 }
 
 function dormir(){
@@ -44,10 +50,7 @@ function dormir(){
     document.getElementById('acordou').innerText = resultado
 
     let dormir = parseInt(document.getElementById('dormir').value)
-    // 0 ... 24
-
     resto = dormir - 8
-
     let e = document.getElementById('recomendacao')
 
     if (resto == 0 ){
