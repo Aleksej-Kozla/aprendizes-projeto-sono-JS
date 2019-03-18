@@ -18,36 +18,30 @@
     <section>
         <h2>Tempo de trabalhado</h2>
         <input type="text" placeholder='0 horas' id='trabalho' onchange='tempo()'>
-        <p>Esse periodo se refere apenas periodo em que você é remunerado</p>
-
-        <br>
-        <br>
+        <p>*Esse periodo se refere apenas periodo do dia em que você é remunerado</p>
 
         <h2>Tempo dormindo</h2>
         <input type="text" placeholder='0 horas' id='dormir' onchange='tempo()'>
-        <p>Esse periodo envolve o tempo que voce passou dormindo ou se prerando para dormir</p>
-
-        <br>
-        <br>
+        <p>*Esse periodo envolve o tempo que você passou dormindo ou se preparando para dormir</p>
 
         <h2 id='resto'>Total de horas restantes: 0 horas</h2>
-        <p>Esse perido se refere ao seu tempo livre, tempo gasto em transporte e </p>
+        <p>*Esse perido se refere ao seu tempo livre, tempo gasto em transporte e estudando</p>
     </section>
 
     <section>
-        <h2>Salario liquido</h2>
+        <h2>Qual é seu salario liquido?</h2>
         <input type="text" id="salario" placeholder="R$ 0" onchange="dinheiro()">
-        <p>Referente a um mes</p>
+        <p>*Referente a um mês</p>
         <section>
             <h2>Valor da sua hora</h2>
-            <p id="hora">-</p>
+            <h3 id="hora">-</h3>
             <h2>Valor do seu minuto</h2>
-            <p id="minuto">-</p>
+            <h3 id="minuto">-</h3>
         </section>
     </section>
 
     <section>
-        <h2>Qual o horario que vc vai dormir?</h2>
+        <h2>A que horas você vai dormir?</h2>
         <input type="time" id="dormiu" onchange="dormir()">
         <p id="acordou"></p>
         <p id="recomendacao"></p>
