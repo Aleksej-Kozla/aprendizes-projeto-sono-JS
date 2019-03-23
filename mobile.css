@@ -59,6 +59,18 @@ p{
 
 @media only screen and (min-width: 430px){
 
+#PrimeiraParte { 
+    width: 95%;
+    padding: 0;
+    margin-top: 1%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white
+}
+
     section{
         width: 40%;
         border-radius: 0.9vw;
@@ -74,6 +86,9 @@ p{
         font-size: 2vw;
     }p{
         font-size: 1.5vw;
+    }
+    #valores{
+        width: 100%;
     }
 
 }

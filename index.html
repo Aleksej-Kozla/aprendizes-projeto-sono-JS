@@ -15,6 +15,7 @@
     <header>
         <h1>Gerenciador de tempo</h1>
     </header>
+<section id="PrimeiraParte">
     <section>
         <h2>Tempo de trabalhado</h2>
         <input type="text" placeholder='0 horas' id='trabalho' onchange='tempo()'>
@@ -29,10 +30,18 @@
     </section>
 
     <section>
+        <h2>A que horas você vai dormir?</h2>
+        <input type="time" id="dormiu" onchange="dormir()">
+        <p id="acordou"></p>
+        <p id="recomendacao"></p>
+    </section>
+</section>
+
+    <section>
         <h2>Qual é seu salario liquido?</h2>
         <input type="text" id="salario" placeholder="R$ 0" onchange="dinheiro()">
         <p>*Referente a um mês</p>
-        <section>
+        <section id="valores">
             <h2>Valor da sua hora</h2>
             <h3 id="hora">-</h3>
             <h2>Valor do seu minuto</h2>
@@ -40,13 +49,7 @@
         </section>
     </section>
 
-    <section>
-        <h2>A que horas você vai dormir?</h2>
-        <input type="time" id="dormiu" onchange="dormir()">
-        <p id="acordou"></p>
-        <p id="recomendacao"></p>
-    </section>
-
+    
 </body>
 
 </html>
